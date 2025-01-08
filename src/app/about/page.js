@@ -15,9 +15,7 @@ export default function About() {
             Python and JS/TS with a lot of experience in full-stack mobile and
             web development
           </span>{" "}
-          as well as a mastery of turning designs into code. My most epic
-          skillset is the fact that I’ll find someway way to make something
-          happen, even if it entails going against the physics of the world.
+          as well as a mastery of turning designs into code. My most epic skillset lies in the fact that I consistently push the boundaries of coventional thinking to turn my ambitious visions into reality.
         </h2>
 
         <h2>
@@ -28,8 +26,8 @@ export default function About() {
             </Link>
           </span>{" "}
           , a health tech startup using AI-driven medical insights to help
-          doctors approach revascularization. I’m working on developing V1 of
-          the clinical insights system to be integrated into healthcare systems.
+          doctors approach revascularization decision for patients suffering from cronery artery disease. I’m working on developing V1 of
+          the clinical insights software to be integrated into healthcare systems.
           I won over $300K in scholarships. I have a tradition of building at
           least one large-scale project every year, this year I’m creating{" "}
           <span>
