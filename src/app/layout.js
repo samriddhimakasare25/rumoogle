@@ -30,11 +30,17 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="256x256" />
+        <link rel="icon" href="/icon.ico" type="image/x-icon" sizes="200x256" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <title>rumoogle</title>
 
-        <meta property="og:title" content="(Rum)oogle" />
+        <meta property="og:title" content="Rumoogle" />
         <meta property="og:description" content="everything you'll ever need" />
         <meta property="og:image" content="/head-shot.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rumoogle" />
+        <meta name="twitter:description" content="Rumeza Fatima's Archive" />
+        <meta name="twitter:image" content="/Banner.png" />
       </head>
       <body className="flex flex-col min-h-screen relative">
         <Header setShowMailer={setIsOpen} />
