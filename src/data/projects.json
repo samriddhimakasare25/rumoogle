@@ -115,7 +115,7 @@
     "timeline": "present",
     "type": "startup",
     "searchDescription": "We bring your plans outside of the groupchat",
-    "longDescription": "Started in the google GEMINI hackathon. Comming to a phone near you", 
+    "longDescription": "Started in the google GEMINI hackathon. Coming to a phone near you", 
     "links": [{"link": "https://www.instagram.com/reel/DAhFIbZSyEG/", "name": "video", "url": "video-outline.svg" , "urlHover": "video-outline.svg"}]
   }
 

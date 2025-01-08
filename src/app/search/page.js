@@ -318,7 +318,7 @@ export default function Search() {
           </div>
 
           {displayQuery !== "why-hire-a-rumeza" && (
-            <div className="hidden w-1/3 h-[40rem] border-[0.05rem] border-white border-opacity-30 shadow-xl rounded-lg md:flex flex-col gap-y-3 ">
+            <div className="hidden w-1/3 p-2 h-[40rem] border-[0.05rem] border-white border-opacity-30 shadow-xl rounded-lg md:flex flex-col gap-y-3 ">
               <img
                 src={
                   displayQuery == "life"
@@ -330,7 +330,7 @@ export default function Search() {
               />
 
               {(displayQuery == "rumezas-projects" && (
-                <div className="flex flex-col gap-y-3 p-2">
+                <div className="flex flex-col gap-y-3">
                   <h2 className="opacity-70 text-lg">
                     I love building impact-driven, full-stack projects.{" "}
                   </h2>

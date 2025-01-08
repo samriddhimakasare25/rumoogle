@@ -81,10 +81,9 @@ export default function Header({ setShowMailer }) {
       } gap-y-2 w-full md:flex-row justify-between items-center font-ropaSans text-accent-text p-4 ${
         (path !== "/" && "pt-8") || "pl-10"
       }  md:pl-16 relative`}
-      
     >
-      <div 
-      style={{ zIndex: 40 }}
+      <div
+        style={{ zIndex: 40 }}
         className={`flex ${
           path !== "/" ? "flex-col" : "flex-row"
         } w-full md:flex-row gap-x-5 items-center`}
@@ -94,7 +93,10 @@ export default function Header({ setShowMailer }) {
             (Rum)oogle
           </Link>
         )) || (
-          <Link href="/about" className="cursor-pointer hover:opacity-70 transform transition-all duration-300 ">
+          <Link
+            href="/about"
+            className="cursor-pointer hover:opacity-70 transform transition-all duration-300 "
+          >
             About
           </Link>
         )}
@@ -108,7 +110,10 @@ export default function Header({ setShowMailer }) {
             (Rum)oogle
           </Link>
         )}
-        <div className="cursor-pointer hover:opacity-70 transform transition-all duration-300" onClick={() => setShowMailer(true)}>
+        <div
+          className="cursor-pointer hover:opacity-70 transform transition-all duration-300"
+          onClick={() => setShowMailer(true)}
+        >
           Gmail
         </div>
 
@@ -147,9 +152,17 @@ export default function Header({ setShowMailer }) {
             style={{ zIndex: 90 }}
             className={`absolute ${
               (linkMenu &&
-                `grid grid-cols-3 right-5 ${path !== "/" ? "-bottom-[12rem] md:-bottom-[16.5rem]" : "-bottom-[16.5rem]"}`) ||
+                `grid grid-cols-3 right-5 ${
+                  path !== "/"
+                    ? "-bottom-[12rem] md:-bottom-[16.5rem]"
+                    : "-bottom-[16.5rem]"
+                }`) ||
               (profileMenu &&
-                `flex flex-col right-5 ${path !== "/" ? "-bottom-[19rem] md:-bottom-[23.5rem]" : " -bottom-[23.5rem]"}`)
+                `flex flex-col right-5 ${
+                  path !== "/"
+                    ? "-bottom-[20.5rem] md:-bottom-[24.5rem]"
+                    : " -bottom-[24.5rem]"
+                }`)
             } bg-dark-purple-200 border border-[0.5rem]  border-accent-color  rounded-[1.5rem] p-6 gap-6`}
           >
             {linkMenu &&
@@ -228,6 +241,17 @@ export default function Header({ setShowMailer }) {
                     <h2>
                       View more of my work using the{" "}
                       <span className="italic text-white">Dot-Menu</span>
+                    </h2>
+                    <h2 className="flex flex-row gap-x-1 items-center">
+                      Book a call using{" "}
+                      <span className="italic text-white flex inline-flex self-center ">
+                        <div
+                          className="bg-no-repeat w-5 h-5 bg-cover"
+                          style={{
+                            backgroundImage: "url(icons/calendar.svg)",
+                          }}
+                        />
+                      </span>
                     </h2>
                   </div>
                 </div>
