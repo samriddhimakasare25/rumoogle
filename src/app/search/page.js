@@ -210,7 +210,7 @@ export default function Search() {
       <div className="flex flex-col w-full relative ">
         <div className="border borber-b border-[0.05rem] border-white border-opacity-10" />
         <div className="w-full flex flex-row gap-x-20 py-10">
-          <div className="flex flex-col gap-y-4 px-4 md:w-2/3 lg:w-1/2  md:pl-48">
+          <div className="flex flex-col gap-y-4 px-4 md:w-1/2  lg:pl-48">
             {(displayQuery !== "why-hire-a-rumeza" &&
               displayData?.map((data, idx) => (
                 <div key={idx}>
@@ -318,7 +318,7 @@ export default function Search() {
           </div>
 
           {displayQuery !== "why-hire-a-rumeza" && (
-            <div className="w-1/3 h-[40rem] border-[0.05rem] border-white border-opacity-30 shadow-xl rounded-lg flex flex-col gap-y-3 ">
+            <div className="hidden w-1/3 h-[40rem] border-[0.05rem] border-white border-opacity-30 shadow-xl rounded-lg md:flex flex-col gap-y-3 ">
               <img
                 src={
                   displayQuery == "life"
