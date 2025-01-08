@@ -43,19 +43,6 @@ export default function Search() {
     "GraphQL",
   ];
   const technologies = [
-    "Python",
-    "Java",
-    "C++",
-    "JavaScript",
-    "Typescript",
-    "HTML",
-    "CSS",
-    "SQL",
-    "Sqlite",
-    "Solidity",
-    "Ruby",
-    "XML",
-    "GraphQL",
     "React JS",
     "React Native",
     "Nodejs",
@@ -72,7 +59,7 @@ export default function Search() {
     "NumPy",
     "Matplotlib",
     "NLTK",
-    "Kivy",
+    "Kivy"
   ];
 
   useEffect(() => {
