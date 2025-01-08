@@ -39,7 +39,7 @@ export default function SearchBar({ query }) {
       className={`flex flex-col items-center w-full gap-y-6 font-ropaSans ${
         path === "/" && "relative"
       }`}
-      style={{ zIndex: 100 }}
+      style={{ zIndex: 80 }}
     >
       {path === "/" && (
         <h2 className="text-white text-6xl lg:text-7xl xl:text-8xl absolute -top-20 lg:-top-28">

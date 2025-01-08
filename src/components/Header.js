@@ -81,9 +81,10 @@ export default function Header({ setShowMailer }) {
       } gap-y-2 w-full md:flex-row justify-between items-center font-ropaSans text-accent-text p-4 ${
         (path !== "/" && "pt-8") || "pl-10"
       }  md:pl-16 relative`}
-      style={{ zIndex: 40 }}
+      
     >
-      <div
+      <div 
+      style={{ zIndex: 40 }}
         className={`flex ${
           path !== "/" ? "flex-col" : "flex-row"
         } w-full md:flex-row gap-x-5 items-center`}
@@ -143,12 +144,12 @@ export default function Header({ setShowMailer }) {
         {showMenu && (
           <div
             ref={menuRef}
-            style={{ zIndex: 9999 }}
+            style={{ zIndex: 90 }}
             className={`absolute ${
               (linkMenu &&
-                "grid grid-cols-3 right-5 -bottom-[12rem] md:-bottom-[16.5rem]") ||
+                `grid grid-cols-3 right-5 ${path !== "/" ? "-bottom-[12rem] md:-bottom-[16.5rem]" : "-bottom-[16.5rem]"}`) ||
               (profileMenu &&
-                "flex flex-col right-5 -bottom-[19rem] md:-bottom-[23.5rem]")
+                `flex flex-col right-5 ${path !== "/" ? "-bottom-[19rem] md:-bottom-[23.5rem]" : " -bottom-[23.5rem]"}`)
             } bg-dark-purple-200 border border-[0.5rem]  border-accent-color  rounded-[1.5rem] p-6 gap-6`}
           >
             {linkMenu &&
