@@ -1,5 +1,5 @@
 // app/layout.js
-"use client"
+"use client";
 import Header from "@/components/Header";
 import "./globals.css"; // Your global styles
 import { Roboto, Ropa_Sans } from "next/font/google";
@@ -21,24 +21,44 @@ const ropaSans = Ropa_Sans({
   variable: "--font-ropa-sans", // Optional for CSS variable
 });
 
-
 export default function RootLayout({ children }) {
   const [isExpand, setIsExpand] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <html lang="en" className={`${ropaSans.variable} bg-dark-purple-100`}>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="256x256" />
+
+        <meta property="og:title" content="(Rum)oogle" />
+        <meta property="og:description" content="everything you'll ever need" />
+        <meta property="og:image" content="/head-shot.png" />
+      </head>
       <body className="flex flex-col min-h-screen relative">
         <Header setShowMailer={setIsOpen} />
 
         <main className="flex-grow flex">
           <div className="w-full">{children}</div>
         </main>
-        {isOpen && <div
-          className={`${isExpand ? "fixed inset-0 bg-gray-900 bg-opacity-70 z-40 flex items-center justify-center" : "fixed inset-0 bg-gray-900 bg-opacity-7 flex items-center justify-center md:block  md:bg-transparent md:inset-auto md:bottom-0 md:right-0 shadow-2xl"} `}
-          style={{ zIndex: 100 }}
-        >
-          <Mailer isExpand={isExpand} isOpen={isOpen} setIsExpand={setIsExpand} setIsOpen={setIsOpen} />
-        </div>}
+        {isOpen && (
+          <div
+            className={`${
+              isExpand
+                ? "fixed inset-0 bg-gray-900 bg-opacity-70 z-40 flex items-center justify-center"
+                : "fixed inset-0 bg-gray-900 bg-opacity-7 flex items-center justify-center md:block  md:bg-transparent md:inset-auto md:bottom-0 md:right-0 shadow-2xl"
+            } `}
+            style={{ zIndex: 100 }}
+          >
+            <Mailer
+              isExpand={isExpand}
+              isOpen={isOpen}
+              setIsExpand={setIsExpand}
+              setIsOpen={setIsOpen}
+            />
+          </div>
+        )}
         <Footer />
       </body>
     </html>
