@@ -360,7 +360,7 @@ export default function Search() {
                       Frameworks & Libraries
                     </h2>
                     <div className="flex flex-row flex-wrap gap-2">
-                      {languages.map((stack, idx) => (
+                      {technologies.map((stack, idx) => (
                         <div
                           key={idx}
                           className="inline-flex bg-white bg-opacity-10 text-accent-text text-sm p-1 rounded"
