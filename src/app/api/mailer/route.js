@@ -30,9 +30,9 @@ export async function POST(req) {
 
   // Prepare email params
   const params = {
-    Source: "rumeza06@gmail.com", // Verified email address in AWS SES
+    Source: "rumezaft@gmail.com", // Verified email address in AWS SES
     Destination: {
-      ToAddresses: ["rumeza06@gmail.com"], // Replace with your dynamic recipient if needed
+      ToAddresses: ["rumezaft@gmail.com"], // Replace with your dynamic recipient if needed
     },
     Message: {
       Subject: {
