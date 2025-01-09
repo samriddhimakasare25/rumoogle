@@ -32,6 +32,18 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icon.ico" type="image/x-icon" sizes="200x256" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <title>rumoogle</title>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-TRZSNGGH');
+        `,
+          }}
+        ></script>
 
         <meta property="og:title" content="Rumoogle" />
         <meta property="og:description" content="everything you'll ever need" />
@@ -42,6 +54,14 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="/Banner.png" />
       </head>
       <body className="flex flex-col min-h-screen relative">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TRZSNGGH"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
         <Suspense fallback={<div>Loading Header...</div>}>
           <Header setShowMailer={setIsOpen} />
         </Suspense>
