@@ -45,6 +45,21 @@ export default function RootLayout({ children }) {
           }}
         ></script>
 
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-8RG9NY419T"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8RG9NY419T');`,
+          }}
+        ></script>
+
         <meta property="og:title" content="Rumoogle" />
         <meta property="og:description" content="everything you'll ever need" />
         <meta property="og:image" content="/Banner.png" />
@@ -59,7 +74,7 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-TRZSNGGH"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         <Suspense fallback={<div>Loading Header...</div>}>
