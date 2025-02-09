@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="/Banner.png" />
         <meta name="twitter:title" content="Rumoogle" />
         <meta name="twitter:description" content="my typa g*ogle" />
-        <meta name="twitter:image" content="/Banner.png" />
+        <meta name="twitter:image" content="https://rumeza.ca/Banner.png" />
       </head>
       <body className="flex flex-col min-h-screen relative">
         <noscript>
