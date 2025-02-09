@@ -33,6 +33,11 @@ export default function Header({ setShowMailer }) {
   const externalLinks = [
     { text: "code :3", icon: "github.svg", url: "https://github.com/rumezaa" },
     {
+      text: "stalk",
+      icon: "x.svg",
+      url: "https://x.com/rumezaft",
+    },
+    {
       text: "connect",
       icon: "linkedin.svg",
       url: "https://www.linkedin.com/in/ftrumeza/",
@@ -170,7 +175,8 @@ export default function Header({ setShowMailer }) {
                 <Link
                   key={idx}
                   href={link.url}
-                  className="flex flex-col items-center hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-lg"
+                  target="_blank"
+                  className="flex flex-col items-center hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-lg transform transition ease-out duration-200"
                 >
                   <div
                     className="bg-no-repeat bg-cover w-12 h-12"

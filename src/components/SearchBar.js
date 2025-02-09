@@ -114,7 +114,7 @@ export default function SearchBar({ query }) {
             </h2>
             {searches.map((item, idx) => (
               <Link
-                className="px-4 flex flex-row items-center w-full gap-x-2 text-[#E5DFFF] py-2 rounded-lg hover:bg-white hover:bg-opacity-5"
+                className="px-4 flex flex-row items-center w-full gap-x-2 text-[#E5DFFF] py-2 rounded-lg hover:bg-white hover:bg-opacity-5 transform transition ease-out duration-200"
                 href={`/search?q=${encodeURIComponent(item.param)}`}
                 key={idx}
                 onClick={() => {
