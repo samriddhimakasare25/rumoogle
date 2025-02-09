@@ -63,7 +63,8 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Rumoogle" />
         <meta property="og:description" content="everything you'll ever need" />
         <meta property="og:image" content="/Banner.png" />
-        <meta name="twitter:card" content="/Banner.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image:type" content="image/png"/>
         <meta name="twitter:title" content="Rumoogle" />
         <meta name="twitter:description" content="my typa g*ogle" />
         <meta name="twitter:image" content="https://rumeza.ca/Banner.png" />
