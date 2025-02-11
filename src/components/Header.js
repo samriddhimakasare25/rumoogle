@@ -20,7 +20,7 @@ export default function Header({ setShowMailer }) {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText("rumeza06@gmail.com");
+      await navigator.clipboard.writeText("samriddhi.makasre.com");
       setIsCopy(true);
       setTimeout(() => {
         setIsCopy(false);
@@ -31,10 +31,10 @@ export default function Header({ setShowMailer }) {
   };
 
   const externalLinks = [
-    { text: "code :3", icon: "github.svg", url: "https://github.com/rumezaa" },
+    { text: "code :3", icon: "github.svg", url: "https://github.com/samriddhimakasare25" },
     {
       text: "stalk",
-      icon: "x.svg",
+      icon: "instagram.svg",
       url: "https://x.com/rumezaft",
     },
     {
