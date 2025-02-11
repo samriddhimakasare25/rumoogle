@@ -26,7 +26,7 @@ export default function About() {
             </Link>
           </span>{" "}
           , a health tech startup using AI-driven medical insights to help
-          doctors approach revascularization decision for patients suffering from cronery artery disease. I’m working on developing V1 of
+          doctors approach revascularization decision for pati suffering from cronery artery disease. I’m working on developing V1 of
           the clinical insights software to be integrated into healthcare systems.
           I won over $300K in scholarships. I have a tradition of building at
           least one large-scale project every year, this year I’m creating{" "}
